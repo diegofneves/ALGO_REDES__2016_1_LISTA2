@@ -1,0 +1,14 @@
+ALGORITMO "Cálculo da média final"
+
+DECLARE N, N2, N3, M NUMÉRICO
+ESCREVA "Digite suas notas"
+LEIA N1, N2, N3
+M <- (N1 + N2 + N3)/3
+SE M >= 7
+	ENTÃO ESCREVA "Aprovado"
+SENÃO SE M >= 4 E M < 7
+	ENTÃO ESCREVA "Terá que fazer recuperação"
+SENÃO
+	ENTÃO ESCREVA "Reprovado"
+
+FIM_ALGORITMO

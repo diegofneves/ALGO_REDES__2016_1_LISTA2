@@ -1,0 +1,28 @@
+ALGORITMO "Opinião sobre o filme"
+
+DECLARE N, OTIMO, BOM, REGULAR, CONT_OTIMO, CONT_BOM, CONT_REGULAR INTEIRO
+
+
+CONT_OTIMO <- 0
+CONT_BOM <- 0
+CONT_REGULAR <- 0
+
+PARA i DE 1 ATE 10 FAÇA
+
+ESCREVA "O que você achou do filme?"
+LEIA N
+
+SE N = 3
+	ENTÃO CONT_OTIMO <- CONT_OTIMO + 1
+SENÃO SE N = 2
+	ENTÃO CONT_BOM <- CONT_BOM + 1
+ENTÃO SE N = 1
+	ENTÃO CONT_REGULAR <- CONT_REGULAR + 1
+SENÃO
+	ESCREVA "Opção inválida"
+
+ESCREVA "A quantidade de pessoas que acharam ótimo é: ", CONT_OTIMO
+ESCREVA "A quantidade de pessoas que acharam bom é: ", CONT_BOM
+ESCREVA "A quantidade de pessoas que acharam regular é: ", CONT_REGULAR
+
+FIM_ALGORITMO
